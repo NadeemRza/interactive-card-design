@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm -->
+
+    <div class="payment">
+      <div class="container">
+        <div class="left">
+          <div class="bgImgContainer">
+            <img
+              class="bgImg"
+              src="./images//bg-main-desktop.png"
+              alt="background_image"
+            />
+            <div class="card2"><span>000</span></div>
+            <div class="card1">
+              <div class="cardContainer1">
+                <svg
+                  width="84"
+                  height="47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse cx="23.478" cy="23.5" rx="20" ry="20" fill="#fff" />
+                  <path
+                    d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+                    stroke="#fff"
+                  />
+                </svg>
+                <div class="card1textContainer">
+                  <div class="card_number">
+                    <div>0000</div>
+                    <div>0000</div>
+                    <div>0000</div>
+                    <div>0000</div>
+                  </div>
+                  <div class="card_details">
+                    <div>JANE APPLESEED</div>
+                    <div>00/00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="rightContainer">
+            <label for="name">CARDHOLDER NAME</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="ex. Mohammed Raza"
+            />
+            <label for="number">CARD NUMBER</label>
+            <input
+              type="text"
+              name="number"
+              id="number"
+              placeholder="ex. 1234 4567 9101 1234"
+            />
+            <div class="endInputs">
+              <div class="dateInput">
+                <label for="date">EXP. DATE (MM/YY)</label>
+                <div class="dateInputContainer">
+                  <input
+                    class="expiry_input"
+                    type="number"
+                    name="month"
+                    id="month"
+                    placeholder="MM"
+                  />
+                  <input
+                    class="expiry_input"
+                    type="number"
+                    name="year"
+                    id="year"
+                    placeholder="YY"
+                  />
+                </div>
+              </div>
+              <div class="cvvInputs">
+                <label for="cvv">CVV</label>
+                <input
+                  class="cvv_input"
+                  type="number"
+                  name="cvv"
+                  id="cvv"
+                  placeholder="ex. 123"
+                />
+              </div>
+            </div>
+            <button>Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
